@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.badminton.manage.integration.dao.UserDao">
+
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="userId">
+        insert into user_entity(userId, name, phone, balance) VALUES
+        (#{userId},#{name},#{phone},#{balance})
+    </insert>
+
+    <select id="queryUser" resultType="com.badminton.manage.bean.user.User">
+        select * from user_entity where user_entity.phone like concat('%', #{phone}, '%')
+        <if test="userId != null and userId != ''">
+            and userId = #{userId}
+        </if>
+        limit #{firstIndex}, #{pageSize}
+    </select>
+
+    <select id="queryPassword" resultType="com.badminton.manage.bean.user.LoginUser">
+        select account, password from user_entity where account = #{account}
+    </select>
+
+    <select id="countUser" resultType="int">
+        select count(*) from user_entity where user_entity.phone like concat('%', #{phone}, '%');
+    </select>
+
+    <delete id="deleteUser">
+        delete from user_entity where user_entity.userId = #{userId}
+    </delete>
+
+    <update id="updateUser">
+        update user_entity set name = #{name}, phone = #{phone}, balance = #{balance} where userId = #{userId}
+    </update>
+</mapper>

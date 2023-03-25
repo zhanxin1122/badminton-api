@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 25 15:54:09 CST 2023
+@default-mvnrepository-https\://mvnrepository.com/.lastUpdated=1679730831467
+https\://mvnrepository.com/.error=Could not transfer artifact org.apache\:apache\:pom\:23 from/to mvnrepository (https\://mvnrepository.com/)\: Authorization failed for https\://mvnrepository.com/org/apache/apache/23/apache-23.pom 403 Forbidden
+https\://repo.spring.io/milestone/.error=
+http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1679730831763
+https\://repo.spring.io/milestone/.lastUpdated=1679730849745
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1679730849858

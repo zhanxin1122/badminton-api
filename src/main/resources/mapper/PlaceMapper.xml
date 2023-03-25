@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.badminton.manage.integration.dao.PlaceDao">
+
+    <insert id="addPlace" useGeneratedKeys="true" keyProperty="placeId">
+        insert into place_entity(placeId, name, remark) VALUES
+        (#{placeId},#{name},#{remark})
+    </insert>
+
+    <select id="queryPlace" resultType="com.badminton.manage.bean.place.Place">
+        select * from place_entity where place_entity.name like concat('%', #{name}, '%') limit #{firstIndex}, #{pageSize};
+    </select>
+
+    <select id="countPlace" resultType="int">
+        select count(*) from place_entity where place_entity.name like concat('%', #{name}, '%');
+    </select>
+
+    <delete id="deletePlace">
+        delete from place_entity where place_entity.placeId = #{placeId}
+    </delete>
+
+    <update id="updatePlace">
+        update place_entity set name = #{name}, remark = #{remark} where placeId = #{placeId}
+    </update>
+</mapper>

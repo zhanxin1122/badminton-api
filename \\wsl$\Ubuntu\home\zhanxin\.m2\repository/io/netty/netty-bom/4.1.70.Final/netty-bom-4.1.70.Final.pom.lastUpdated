@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 25 15:53:53 CST 2023
+@default-mvnrepository-https\://mvnrepository.com/.lastUpdated=1679730833120
+https\://mvnrepository.com/.error=Could not transfer artifact io.netty\:netty-bom\:pom\:4.1.70.Final from/to mvnrepository (https\://mvnrepository.com/)\: Authorization failed for https\://mvnrepository.com/io/netty/netty-bom/4.1.70.Final/netty-bom-4.1.70.Final.pom 403 Forbidden
+http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1679730833425

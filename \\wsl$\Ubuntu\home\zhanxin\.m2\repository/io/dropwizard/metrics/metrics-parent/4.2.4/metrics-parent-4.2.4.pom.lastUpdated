@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 25 15:53:38 CST 2023
+@default-mvnrepository-https\://mvnrepository.com/.lastUpdated=1679730818191
+https\://mvnrepository.com/.error=Could not transfer artifact io.dropwizard.metrics\:metrics-parent\:pom\:4.2.4 from/to mvnrepository (https\://mvnrepository.com/)\: Authorization failed for https\://mvnrepository.com/io/dropwizard/metrics/metrics-parent/4.2.4/metrics-parent-4.2.4.pom 403 Forbidden
+http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1679730818537

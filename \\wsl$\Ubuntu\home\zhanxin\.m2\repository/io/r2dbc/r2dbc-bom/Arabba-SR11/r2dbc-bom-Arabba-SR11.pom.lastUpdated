@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 25 15:53:58 CST 2023
+@default-mvnrepository-https\://mvnrepository.com/.lastUpdated=1679730837917
+https\://mvnrepository.com/.error=Could not transfer artifact io.r2dbc\:r2dbc-bom\:pom\:Arabba-SR11 from/to mvnrepository (https\://mvnrepository.com/)\: Authorization failed for https\://mvnrepository.com/io/r2dbc/r2dbc-bom/Arabba-SR11/r2dbc-bom-Arabba-SR11.pom 403 Forbidden
+http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1679730838217

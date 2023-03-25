@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 25 14:45:23 CST 2023
+@default-mvnrepository-https\://mvnrepository.com/.lastUpdated=1679726722972
+https\://mvnrepository.com/.error=Could not transfer artifact net.bytebuddy\:byte-buddy\:pom\:1.11.22 from/to mvnrepository (https\://mvnrepository.com/)\: status code\: 403, reason phrase\: Forbidden (403)
+http\://0.0.0.0/.error=Could not transfer artifact net.bytebuddy\:byte-buddy\:pom\:1.11.22 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [alimaven (http\://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+https\://repo.spring.io/milestone/.error=
+https\://repo.spring.io/milestone/.lastUpdated=1679726723195
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1679726722972
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1679726723608

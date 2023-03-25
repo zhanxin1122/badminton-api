@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 25 15:54:01 CST 2023
+@default-mvnrepository-https\://mvnrepository.com/.lastUpdated=1679730841060
+https\://mvnrepository.com/.error=Could not transfer artifact org.springframework\:spring-framework-bom\:pom\:5.3.13 from/to mvnrepository (https\://mvnrepository.com/)\: Authorization failed for https\://mvnrepository.com/org/springframework/spring-framework-bom/5.3.13/spring-framework-bom-5.3.13.pom 403 Forbidden
+http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1679730841348

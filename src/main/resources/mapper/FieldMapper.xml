@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.badminton.manage.integration.dao.FieldDao">
+
+    <insert id="addField" useGeneratedKeys="true" keyProperty="fieldId">
+        insert into field_entity(fieldId, placeId, name, remark, pay) VALUES
+        (#{fieldId},#{placeId},#{name},#{remark}, '')
+    </insert>
+
+    <select id="queryField" resultType="com.badminton.manage.bean.field.Field">
+        select * from field_entity where field_entity.name like concat('%', #{name}, '%') limit #{firstIndex}, #{pageSize};
+    </select>
+
+    <select id="getFieldTime" resultType="String">
+        select time from order_entity where fieldId = #{fieldId} and useDate <![CDATA[ >= ]]> #{startDate} AND useDate <![CDATA[ <= ]]> #{endDate};
+    </select>
+
+    <select id="countField" resultType="int">
+        select count(*) from field_entity where field_entity.name like concat('%', #{name}, '%');
+    </select>
+
+    <delete id="deleteField">
+        delete from field_entity where field_entity.fieldId = #{fieldId}
+    </delete>
+
+    <update id="updateField">
+        update field_entity set name = #{name}, placeId=#{placeId}, remark = #{remark}, pay=#{pay} where fieldId = #{fieldId}
+    </update>
+
+    <select id="payList" resultType="com.badminton.manage.dto.field.PayDetailDTO">
+        select * from field_pay;
+    </select>
+
+    <update id="payUpdate" useGeneratedKeys="true" keyProperty="id">
+        update field_pay set hourPayAm=#{hourPayAm}, hourPayPm=#{hourPayPm}, hourPayNight=#{hourPayNight} where id = #{id};
+    </update>
+</mapper>
